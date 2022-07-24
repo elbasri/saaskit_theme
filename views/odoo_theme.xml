@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="odoo_theme_asset" name="website assets for odoo theme" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+
+			<link rel="stylesheet" href="/theme_odoo/static/css/style.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/swiper.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/dark.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/font-icons.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/animate.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/magnific-popup.css" type="text/css" />
+
+			<link rel="stylesheet" href="/theme_odoo/static/css/custom.css" type="text/css" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        </xpath>
+    </template>
+
+    <template id="new_header" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+                        <header id="header">
+				<div id="header-wrap">
+					<div class="container">
+						<div class="header-row justify-content-lg-between">
+
+							<!-- Logo
+							============================================= -->
+							<div id="logo" class="order-lg-2 col-auto px-0 mr-lg-0">
+								<a href="index.html" class="standard-logo" data-dark-logo="/theme_odoo/static/images/logo-dark.png"><img src="/theme_odoo/static/images/cerp.jpeg" alt="Canvas Logo" /></a>
+								<a href="index.html" class="retina-logo" data-dark-logo="/theme_odoo/static/images/logo-dark@2x.png"><img src="/theme_odoo/static/images/logo@2x.png" alt="Canvas Logo" /></a>
+							</div><!-- #logo end -->
+
+
+							<div id="primary-menu-trigger">
+								<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							</div>
+
+							<!-- Primary Navigation
+							============================================= -->
+							<nav class="primary-menu order-lg-1 col-lg-5 px-0" style="position:inherit;">
+
+								<ul class="menu-container">
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>Home</div></a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>About</div></a>
+									</li>
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Products</div></a>
+										<div class="mega-menu-content mega-menu-style-2">
+											<div class="container">
+												<div class="row">
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Hospital Management</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Hospital Management</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>E-learning</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Help-Desk</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									
+									</li>
+								</ul>
+
+							</nav>
+
+
+							<nav class="primary-menu order-lg-3 col-lg-5 px-0" style="position:inherit;">
+								<div class="menu-container justify-content-lg-end">
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Pricing</div></a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>How to use</div></a>
+									</li>
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Contact</div></a>
+									</li>		
+								</div>
+							</nav><!-- #primary-menu end -->
+						</div>
+					</div>
+				</div>
+				<div class="header-wrap-clone"></div>
+			</header><!-- #header end -->
+				
+				<span class="big-arrow"></span>
+			<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100">
+				<div class="slider-inner">
+
+					<div class="swiper-container swiper-parent">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide dark">
+								<div class="container">
+									<div class="slider-caption slider-caption-center">
+										<h2 data-animate="fadeInUp">Beautifully Flexible</h2>
+										<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+									</div>
+								</div>
+								<div class="video-wrap">
+									<video poster="/theme_odoo/static/images/videos/explore-poster.jpg" preload="auto" loop="true" autoplay="true" muted="true">
+										<source src='/theme_odoo/static/images/videos/explore.mp4' type='video/mp4' />
+										<source src='/theme_odoo/static/images/videos/explore.webm' type='video/webm' />
+									</video>
+									<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+								</div>
+							</div>
+							<div class="swiper-slide dark">
+								<div class="container">
+									<div class="slider-caption slider-caption-center">
+										<h2 data-animate="fadeInUp">Welcome to Canvas</h2>
+										<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on our Canvas.</p>
+									</div>
+								</div>
+								<div class="swiper-slide-bg" style="background-image: url('/theme_odoo/static/images/slider/swiper/1.jpg');"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="container">
+									<div class="slider-caption">
+										<h2 data-animate="fadeInUp">Great Performance</h2>
+										<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+									</div>
+								</div>
+								<div class="swiper-slide-bg" style="background-image: url('/theme_odoo/static/images/slider/swiper/3.jpg'); background-position: center top;"></div>
+							</div>
+						</div>
+						<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+						<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+						<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
+					</div>
+
+				</div>
+			</section>
+		
+		</xpath>
+		
+		<xpath expr="//footer" position="replace">
+			<footer id="footer" class="dark">
+				<div class="container">
+
+					<!-- Footer Widgets
+					============================================= -->
+					<div class="footer-widgets-wrap">
+
+						<div class="row col-mb-50">
+							<div class="col-lg-8">
+
+								<div class="row col-mb-50">
+									<div class="col-md-4">
+
+										<div class="widget clearfix">
+
+											<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+
+											<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+												<address>
+													<strong>Headquarters:</strong><br/>
+													795 Folsom Ave, Suite 600<br/>
+													San Francisco, CA 94107<br/>
+												</address>
+												<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br/>
+												<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br/>
+												<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="col-md-4">
+
+										<div class="widget widget_links clearfix">
+
+											<h4>Blogroll</h4>
+
+											<ul>
+												<li><a href="https://codex.wordpress.org/">Documentation</a></li>
+												<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
+												<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
+												<li><a href="https://wordpress.org/support/">Support Forums</a></li>
+												<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
+												<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
+												<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
+											</ul>
+
+										</div>
+
+									</div>
+
+									<div class="col-md-4">
+
+										<div class="widget clearfix">
+											<h4>Recent Posts</h4>
+
+											<div class="posts-sm row col-mb-30" id="post-list-footer">
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4">
+
+								<div class="row col-mb-50">
+									<div class="col-md-4 col-lg-12">
+										<div class="widget clearfix" style="margin-bottom: -20px;">
+
+											<div class="row">
+												<div class="col-lg-6 bottommargin-sm">
+													<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+													<h5 class="mb-0">Total Downloads</h5>
+												</div>
+
+												<div class="col-lg-6 bottommargin-sm">
+													<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+													<h5 class="mb-0">Clients</h5>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="col-md-5 col-lg-12">
+										<div class="widget subscribe-widget clearfix">
+											<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+											<div class="widget-subscribe-form-result"></div>
+											<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+												<div class="input-group mx-auto">
+													<div class="input-group-prepend">
+														<div class="input-group-text"><i class="icon-email2"></i></div>
+													</div>
+													<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email" />
+													<div class="input-group-append">
+														<button class="btn btn-success" type="submit">Subscribe</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-lg-12">
+										<div class="widget clearfix" style="margin-bottom: -20px;">
+
+											<div class="row">
+												<div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
+													<a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+														<i class="icon-facebook"></i>
+														<i class="icon-facebook"></i>
+													</a>
+													<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br/>on Facebook</small></a>
+												</div>
+												<div class="col-6 col-md-12 col-lg-6 clearfix">
+													<a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+														<i class="icon-rss"></i>
+														<i class="icon-rss"></i>
+													</a>
+													<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br/>to RSS Feeds</small></a>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div><!-- .footer-widgets-wrap end -->
+
+				</div>
+				
+				<!-- Copyrights
+				============================================= -->
+				<div id="copyrights">
+					<div class="container">
+
+						<div class="row col-mb-30">
+
+							<div class="col-md-6 text-center text-md-left">
+								Copyrights 2020 All Rights Reserved by Capital ERP.<br/>
+								<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+							</div>
+
+							<div class="col-md-6 text-center text-md-right">
+								<div class="d-flex justify-content-center justify-content-md-end">
+									<a href="#" class="social-icon si-small si-borderless si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-vimeo">
+										<i class="icon-vimeo"></i>
+										<i class="icon-vimeo"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-yahoo">
+										<i class="icon-yahoo"></i>
+										<i class="icon-yahoo"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+
+								<div class="clear"></div>
+
+								<i class="icon-envelope2"></i> info@canvas.com  <i class="icon-headphones"></i> +1-11-6541-6369 <i class="icon-skype2"></i> CanvasOnSkype
+							</div>
+
+						</div>
+
+					</div>
+				</div><!-- #copyrights end -->
+			
+			</footer><!-- #footer end -->
+
+		</xpath>
+    </template>
+
+    <template id="odoo_theme_homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div id="section-features" class="heading-block text-center page-section">
+						<h2>Features Overview</h2>
+						<span>Some of the Features that are gonna blow your mind off</span>
+					</div>
+
+					<div class="row justify-content-center col-mb-50 mb-0">
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/hospital.png" alt="Hospital management" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Hospital Management</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/elearning.png" alt="elearning" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>E-Learning</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/inventory.png" alt="inventory" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Inventory</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="600">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/emp.png" alt="" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Employee Referral</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="800">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/pmp.png" alt="pmp" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Project</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="1000">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/pos.png" alt="pos" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Point of Sale</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="1200">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/ecom.png" alt="e-commerce" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>E-Commerce</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="1400">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/seo.png" alt="Retina Graphics" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>WEB SITE</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="1600">
+									<a href="#"><img src="/theme_odoo/static/images/icons/features/support.png" alt="Powerful Performance" /></a>
+								</div>
+								<div class="fbox-content">
+									<h3>HELP DESK</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
+
+				</div>
+
+				<div class="promo promo-full promo-dark p-5 header-stick bottommargin-lg">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 col-lg">
+								<h3>Try Premium Free for <span>30 Days</span> and you'll never regret it!</h3>
+								<span>Starts at just <em>$0/month</em> afterwards. No Ads, No Gimmicks and No SPAM. Just Real Content.</span>
+							</div>
+							<div class="col-12 col-lg-auto mt-4 mt-lg-0">
+								<a href="#" class="button button-reveal button-large button-circle text-right m-0"><i class="icon-angle-right"></i><span>Browse Now</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
+				
+				<div class="container clearfix" style="padding-top: 0;margin-bottom: 0;padding-bottom: 0;">
+
+						<div id="section-testimonials" class="heading-block text-center page-section" data-onepage-settings="{&quot;offset&quot;:140,&quot;speed&quot;:1250,&quot;easing&quot;:&quot;easeOutQuad&quot;}">
+							<h2>Testimonials</h2>
+							<span>Our All inclusive Pricing Plan that covers you well</span>
+						</div>
+
+						<ul class="testimonials-grid grid-1 grid-md-2 grid-lg-3">
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/1.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
+										<div class="testi-meta">
+											John Doe
+											<span>XYZ Inc.</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/2.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+										<div class="testi-meta">
+											Collis Ta'eed
+											<span>Envato Inc.</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/7.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Fugit officia dolor sed harum excepturi ex iusto magnam asperiores molestiae qui natus obcaecati facere sint amet.</p>
+										<div class="testi-meta">
+											Mary Jane
+											<span>Google Inc.</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/3.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+										<div class="testi-meta">
+											Steve Jobs
+											<span>Apple Inc.</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/4.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis illum totam dolore deleniti labore.</p>
+										<div class="testi-meta">
+											Jamie Morrison
+											<span>Adobe Inc.</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="/theme_odoo/static/images/testimonials/8.jpg" alt="Customer Testimonails" /></a>
+									</div>
+									<div class="testi-content">
+										<p>Porro dolorem saepe reiciendis nihil minus neque. Ducimus rem necessitatibus repellat laborum nemo quod.</p>
+										<div class="testi-meta">
+											Cyan Ta'eed
+											<span>Tutsplus</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+				</div>
+
+				<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
+				
+				<div class="section footer-stick" style="margin-top: 0;">
+
+					<div class="container clearfix">
+
+						<div id="section-buy" class="heading-block text-center border-bottom-0 page-section">
+							<h2>Enough? Start Building!</h2>
+							<span>Now that you have read all the Tid-Bits, so start with a plan</span>
+						</div>
+
+						<div class="center">
+
+							<a href="#" data-animate="tada" class="button button-3d button-teal button-xlarge mb-0"><i class="icon-star3"></i>Start your FREE Trial</a> - OR - <a href="#" data-scrollto="#section-pricing" class="button button-3d button-red button-xlarge mb-0"><i class="icon-user2"></i>Sign Up for a Subscription</a>
+
+						</div>
+
+					</div>
+
+				</div>
+			
+				<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
+			
+				<div id="section-contact" class="heading-block text-center page-section">
+					<h2>Get in Touch with us</h2>
+					<span>Still have Questions? Contact Us using the Form below</span>
+				</div>
+				<div class="row align-items-stretch col-mb-50 mb-0" style="padding-left: 70px;padding-right: 70px;">
+					<!-- Contact Form
+					============================================= -->
+					<div class="col-md-7 col-lg-6">
+						<div class="fancy-title title-border">
+							<h3>Send us an Email</h3>
+						</div>
+
+						<div class="form-widget">
+
+							<div class="form-result"></div>
+
+							<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post" novalidate="novalidate">
+
+								<div class="form-process">
+									<div class="css3-spinner">
+										<div class="css3-spinner-scaler"></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 form-group">
+										<label for="template-contactform-name">Name <small>*</small></label>
+										<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+									</div>
+
+									<div class="col-md-4 form-group">
+										<label for="template-contactform-email">Email <small>*</small></label>
+										<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+									</div>
+
+									<div class="col-md-4 form-group">
+										<label for="template-contactform-phone">Phone</label>
+										<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+									</div>
+
+									<div class="w-100"></div>
+
+									<div class="col-md-8 form-group">
+										<label for="template-contactform-subject">Subject <small>*</small></label>
+										<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+									</div>
+
+									<div class="col-md-4 form-group">
+										<label for="template-contactform-service">Services</label>
+										<select id="template-contactform-service" name="template-contactform-service" class="sm-form-control" >
+											<option value="">-- Select One --</option>
+											<option value="Wordpress">HOSPITAL MANAGEMENT</option>
+											<option value="PHP / MySQL">E-LEARNING</option>
+											<option value="HTML5 / CSS3">INVENTORY</option>
+											<option value="Graphic Design">POINT OF SALE</option>
+										</select>
+									</div>
+
+									<div class="w-100"></div>
+
+									<div class="col-12 form-group">
+										<label for="template-contactform-message">Message <small>*</small></label>
+										<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+									</div>
+
+									<div class="col-12 form-group d-none">
+										<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+									</div>
+
+									<div class="col-12 form-group">
+										<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+									</div>
+								</div>
+
+								<input type="hidden" name="prefix" value="template-contactform-" />
+
+							</form>
+
+						</div>
+					</div><!-- Contact Form End -->
+
+					<!-- Google Map
+					============================================= -->
+					<div class="col-md-5 col-lg-6 min-vh-40">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108702.95032940026!2d-8.0778939737605!3d31.634748492678977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakesh!5e0!3m2!1sen!2sma!4v1657897500144!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div><!-- Google Map End -->
+				</div>
+				
+				
+			</div>
+		</section><!-- #content end -->
+	</xpath>
+
+	<xpath expr="." position="inside">
+		<!-- JavaScripts
+		============================================= -->
+		<script src="/theme_odoo/static/js/jquery.js"></script>
+		<script src="/theme_odoo/static/js/plugins.min.js"></script>
+
+		<!-- Footer Scripts
+		============================================= -->
+		<script src="/theme_odoo/static/js/functions.js"></script>
+	</xpath>
+    </template>
+</odoo>

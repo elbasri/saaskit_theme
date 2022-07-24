@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="odoo_theme_asset" name="website assets for odoo theme" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+
+			<link rel="stylesheet" href="/theme_odoo/static/css/style.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/swiper.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/dark.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/font-icons.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/animate.css" type="text/css" />
+			<link rel="stylesheet" href="/theme_odoo/static/css/magnific-popup.css" type="text/css" />
+
+			<link rel="stylesheet" href="/theme_odoo/static/css/custom.css" type="text/css" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			
+			<style>
+				.tab {
+				  overflow: hidden;
+				  border: 1px solid #ccc;
+				  background-color: #f1f1f1;
+				}
+
+				/* Style the buttons inside the tab */
+				.tab a {
+				  background-color: inherit;
+				  float: left;
+				  border: none;
+				  outline: none;
+				  cursor: pointer;
+				  padding: 14px 16px;
+				  transition: 0.3s;
+				  font-size: 17px;
+				}
+
+				/* Change background color of buttons on hover */
+				.tab a:hover {
+				  background-color: #ddd;
+				}
+
+				/* Create an active/current tablink class */
+				.tab a.active {
+				  background-color: #ccc;
+				}
+
+				/* Style the tab content */
+				.tabcontent {
+				  display: none;
+				  padding: 6px 12px;
+				  border: 1px solid #ccc;
+				  border-top: none;
+				}
+ 
+			</style>
+
+        </xpath>
+    </template>
+
+    <template id="new_header" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+		<!-- Document Wrapper
+	============================================= -->
+            <header id="header">
+				<div id="header-wrap">
+					<div class="container">
+						<div class="header-row justify-content-lg-between">
+
+							<!-- Logo
+							============================================= -->
+							<div id="logo" class="order-lg-2 col-auto px-0 mr-lg-0">
+								<a href="index.html" class="standard-logo" data-dark-logo="/theme_odoo/static/images/logo-dark.png"><img src="/theme_odoo/static/images/cerp.jpeg" alt="Canvas Logo" /></a>
+								<a href="index.html" class="retina-logo" data-dark-logo="/theme_odoo/static/images/logo-dark@2x.png"><img src="/theme_odoo/static/images/logo@2x.png" alt="Canvas Logo" /></a>
+							</div><!-- #logo end -->
+
+
+							<div id="primary-menu-trigger">
+								<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							</div>
+
+							<!-- Primary Navigation
+							============================================= -->
+							<nav class="primary-menu order-lg-1 col-lg-5 px-0" style="position:inherit;">
+
+								<ul class="menu-container">
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>Home</div></a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>About</div></a>
+									</li>
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Products</div></a>
+										<div class="mega-menu-content mega-menu-style-2">
+											<div class="container">
+												<div class="row">
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Hospital Management</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Hospital Management</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>E-learning</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col-lg-3">
+														<li class="menu-item mega-menu-title">
+															<a class="menu-link" href="#"><div>Help-Desk</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 1</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 2</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="#"><div>Package 3</div></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									
+									</li>
+								</ul>
+
+							</nav>
+
+
+							<nav class="primary-menu order-lg-3 col-lg-5 px-0" style="position:inherit;">
+								<div class="menu-container justify-content-lg-end">
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Pricing</div></a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="#"><div>How to use</div></a>
+									</li>
+									<li class="menu-item mega-menu">
+										<a class="menu-link" href="#"><div>Contact</div></a>
+									</li>		
+								</div>
+							</nav><!-- #primary-menu end -->
+						</div>
+					</div>
+				</div>
+				<div class="header-wrap-clone"></div>
+			</header><!-- #header end -->
+				
+				<span class="big-arrow"></span>
+			<section id="page-title" style="    background-image: url('/theme_odoo/static/images/wave.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom: solid 2px #d4d2d1;">
+
+			<div class="container clearfix">
+				<h1>Grow your Business with Us</h1>
+				<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+
+			</div>
+		</section>
+			
+		</xpath>
+		
+		<xpath expr="//footer" position="replace">
+			<footer id="footer" class="dark">
+				<div class="container">
+
+					<!-- Footer Widgets
+					============================================= -->
+					<div class="footer-widgets-wrap">
+
+						<div class="row col-mb-50">
+							<div class="col-lg-8">
+
+								<div class="row col-mb-50">
+									<div class="col-md-4">
+
+										<div class="widget clearfix">
+
+											<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+
+											<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+												<address>
+													<strong>Headquarters:</strong><br/>
+													795 Folsom Ave, Suite 600<br/>
+													San Francisco, CA 94107<br/>
+												</address>
+												<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br/>
+												<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br/>
+												<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="col-md-4">
+
+										<div class="widget widget_links clearfix">
+
+											<h4>Blogroll</h4>
+
+											<ul>
+												<li><a href="https://codex.wordpress.org/">Documentation</a></li>
+												<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
+												<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
+												<li><a href="https://wordpress.org/support/">Support Forums</a></li>
+												<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
+												<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
+												<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
+											</ul>
+
+										</div>
+
+									</div>
+
+									<div class="col-md-4">
+
+										<div class="widget clearfix">
+											<h4>Recent Posts</h4>
+
+											<div class="posts-sm row col-mb-30" id="post-list-footer">
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="entry col-12">
+													<div class="grid-inner row">
+														<div class="col">
+															<div class="entry-title">
+																<h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
+															</div>
+															<div class="entry-meta">
+																<ul>
+																	<li>10th July 2021</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4">
+
+								<div class="row col-mb-50">
+									<div class="col-md-4 col-lg-12">
+										<div class="widget clearfix" style="margin-bottom: -20px;">
+
+											<div class="row">
+												<div class="col-lg-6 bottommargin-sm">
+													<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+													<h5 class="mb-0">Total Downloads</h5>
+												</div>
+
+												<div class="col-lg-6 bottommargin-sm">
+													<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+													<h5 class="mb-0">Clients</h5>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="col-md-5 col-lg-12">
+										<div class="widget subscribe-widget clearfix">
+											<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+											<div class="widget-subscribe-form-result"></div>
+											<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0" novalidate="novalidate">
+												<div class="input-group mx-auto">
+													<div class="input-group-prepend">
+														<div class="input-group-text"><i class="icon-email2"></i></div>
+													</div>
+													<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email" />
+													<div class="input-group-append">
+														<button class="btn btn-success" type="submit">Subscribe</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-lg-12">
+										<div class="widget clearfix" style="margin-bottom: -20px;">
+
+											<div class="row">
+												<div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
+													<a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+														<i class="icon-facebook"></i>
+														<i class="icon-facebook"></i>
+													</a>
+													<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br/>on Facebook</small></a>
+												</div>
+												<div class="col-6 col-md-12 col-lg-6 clearfix">
+													<a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+														<i class="icon-rss"></i>
+														<i class="icon-rss"></i>
+													</a>
+													<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br/>to RSS Feeds</small></a>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div><!-- .footer-widgets-wrap end -->
+
+				</div>
+				
+				<!-- Copyrights
+				============================================= -->
+				<div id="copyrights">
+					<div class="container">
+
+						<div class="row col-mb-30">
+
+							<div class="col-md-6 text-center text-md-left">
+								Copyrights 2020 All Rights Reserved by Capital ERP.<br/>
+								<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+							</div>
+
+							<div class="col-md-6 text-center text-md-right">
+								<div class="d-flex justify-content-center justify-content-md-end">
+									<a href="#" class="social-icon si-small si-borderless si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-vimeo">
+										<i class="icon-vimeo"></i>
+										<i class="icon-vimeo"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-yahoo">
+										<i class="icon-yahoo"></i>
+										<i class="icon-yahoo"></i>
+									</a>
+
+									<a href="#" class="social-icon si-small si-borderless si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+
+								<div class="clear"></div>
+
+								<i class="icon-envelope2"></i> info@canvas.com  <i class="icon-headphones"></i> +1-11-6541-6369 <i class="icon-skype2"></i> CanvasOnSkype
+							</div>
+
+						</div>
+
+					</div>
+				</div><!-- #copyrights end -->
+			
+			</footer><!-- #footer end -->
+		
+		</xpath>
+    </template>
+
+    <template id="odoo_theme_homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+			<section id="content">
+				<div class="content-wrap">
+					<div class="container clearfix">
+
+						<div class="row gutter-40 col-mb-80">
+							<!-- Post Content
+							============================================= -->
+							<div class="postcontent col-lg-8 order-lg-last">
+
+								<div class="grid-filter-wrap">
+
+									<!-- Portfolio Filter
+									============================================= 
+									<ul class="grid-filter" data-container="#portfolio">
+										<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
+										<li><a href="#" data-filter=".pf-icons">Hospital management</a></li>
+										<li><a href="#" data-filter=".pf-illustrations">E-Learning</a></li>
+										<li><a href="#" data-filter=".pf-uielements">Inventory</a></li>
+										<li><a href="#" data-filter=".pf-media">Website</a></li>
+										<li><a href="#" data-filter=".pf-graphics">Projet</a></li>
+									</ul> .grid-filter end -->
+
+								</div>
+
+								<!-- Portfolio Items
+								============================================= -->
+								<div id="portfolio" class="portfolio row grid-container gutter-20" data-layout="fitRows">
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/1.jpg" alt="Open Imagination" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Open Imagination</a></h3>
+												<span style="float: left;"><a href="#">Media</a>, <a href="#">Icons</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-1" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-1"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-illustrations">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/2.jpg" alt="Locked Steel Gate" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Locked Steel Gate</a></h3>
+												<span style="float: left;"><a href="#">Illustrations</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-2" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-2"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-graphics pf-uielements">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="#">
+													<img src="/theme_odoo/static/images/portfolio/3/3.jpg" alt="Mac Sunglasses" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="https://vimeo.com/89396394" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
+												<span style="float: left;"><a href="#">Graphics</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-3" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-3"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-icons pf-illustrations">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/1.jpg" alt="Open Imagination" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Open Imagination</a></h3>
+												<span style="float: left;"><a href="#">Media</a>, <a href="#">Icons</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-4" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-4"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-uielements pf-media">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/5.jpg" alt="Console Activity" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/5.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Console Activity</a></h3>
+												<span style="float: left;"><a href="#">UI Elements</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-5" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-5"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-graphics pf-illustrations">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/1.jpg" alt="Open Imagination" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Open Imagination</a></h3>
+												<span style="float: left;"><a href="#">Media</a>, <a href="#">Icons</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-1" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-1"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-uielements pf-icons">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single-video.html">
+													<img src="/theme_odoo/static/images/portfolio/3/7.jpg" alt="Backpack Contents" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="https://www.youtube.com/watch?v=kuceVNBTJio" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single-video.html">Backpack Contents</a></h3>
+												<span style="float: left;"><a href="#">UI Elements</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-7" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-7"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-graphics">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/8.jpg" alt="Sunset Bulb Glow" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/8.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Sunset Bulb Glow</a></h3>
+												<span style="float: left;"><a href="#">Graphics</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-8" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-8"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+									<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-illustrations pf-icons">
+										<div class="grid-inner">
+											<div class="portfolio-image">
+												<a href="portfolio-single.html">
+													<img src="/theme_odoo/static/images/portfolio/3/1.jpg" alt="Open Imagination" />
+												</a>
+												<div class="bg-overlay">
+													<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+														<a href="/theme_odoo/static/images/portfolio/full/1.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+														<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+													</div>
+													<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+												</div>
+											</div>
+											<div class="portfolio-desc">
+												<h3><a href="portfolio-single.html">Open Imagination</a></h3>
+												<span style="float: left;"><a href="#">Media</a>, <a href="#">Icons</a></span>
+												<span style="float:right">
+													<div class="switch" style="margin-right: 10px;">
+														<input id="switch-toggle-1" class="switch-toggle switch-toggle-flat" type="checkbox" />
+														<label for="switch-toggle-1"></label>
+													</div>
+												</span>
+											</div>
+										</div>
+									</article>
+
+								</div><!-- #portfolio end -->
+
+							</div><!-- .postcontent end -->
+
+							<!-- Sidebar
+							============================================= -->
+							<div class="sidebar col-lg-4">
+								<div class="sidebar-widgets-wrap">
+
+									<div class="widget quick-contact-widget form-widget clearfix">
+
+										<h4 style="color: #25a9e0;">Order Summary</h4>
+										<div class="form-result"></div>
+										<form id="quick-contact-form" name="quick-contact-form" action="include/form.php" method="post" class="quick-contact-form mb-0" novalidate="novalidate">
+											<div class="form-process">
+												<div class="css3-spinner">
+													<div class="css3-spinner-scaler"></div>
+												</div>
+											</div>
+
+											<label>No. of users:</label>
+											<input type="text" class="required sm-form-control input-block-level" value="3" placeholder="" />
+											<label>Language:</label>
+											<input type="text" class="required sm-form-control input-block-level" value="" placeholder="" />
+											<label>Instance Name ( Sub domain name ):</label>
+											<input type="text" class="required sm-form-control input-block-level" value="" placeholder="" />
+
+											<div class="tab">
+											  <a href="#" class="tablinks active" onclick="openCity(event, 'Monthly')">Monthly</a>
+											  <a href="#" class="tablinks" onclick="openCity(event, 'Yearly')">Yearly</a>
+											</div>
+
+											<div id="Monthly" class="tabcontent" style="display: block;">
+												<table class="table table-hover">
+												  <tbody>
+													<tr>
+													  <td>Number of Users</td>
+													  <td>3 users</td>
+													</tr>
+													<tr>
+													  <td>0 users</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+													<tr>
+													  <td>0 Apps</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+													<tr>
+													  <td>Total / month</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+												  </tbody>
+												</table>
+											</div>
+
+											<div id="Yearly" class="tabcontent">
+												<table class="table table-hover">
+												  <tbody>
+													<tr>
+													  <td>Number of Users</td>
+													  <td>3 users</td>
+													</tr>
+													<tr>
+													  <td>0 users</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+													<tr>
+													  <td>0 Apps</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+													<tr>
+													  <td>Total / year</td>
+													  <td>USD 0.00 USD</td>
+													</tr>
+												  </tbody>
+												</table>
+											</div>
+										
+										
+										</form>
+
+									</div>
+
+								</div>
+							</div><!-- .sidebar end -->
+						
+						</div>
+
+					</div>
+				</div>
+			</section><!-- #content end -->
+
+		</xpath>
+
+		<xpath expr="." position="inside">
+		<!-- JavaScripts
+		============================================= -->
+		<script src="/theme_odoo/static/js/jquery.js"></script>
+		<script src="/theme_odoo/static/js/plugins2.js"></script>
+
+		<!-- Footer Scripts
+		============================================= -->
+		<script src="/theme_odoo/static/js/functions.js"></script>
+
+			<script src="/theme_odoo/static/js/tabs.js"></script>
+		</xpath>
+    </template>
+</odoo>
